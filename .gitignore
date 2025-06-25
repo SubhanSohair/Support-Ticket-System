@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database
+*.db
+
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# VS Code / IDEs
+.vscode/
+.idea/
+
+# OS / System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uvicorn reload artifacts
+*.pid
+
+# Python distribution/packaging
+build/
+dist/
+*.egg-info/
