@@ -1,0 +1,20 @@
+.stats-summary {
+  background: #e8f0fe;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.stats-summary h2 {
+  margin-bottom: 10px;
+}
+
+.stats-summary ul {
+  padding: 0;
+  list-style: none;
+}
+
+.stats-summary li {
+  margin: 5px 0;
+}
