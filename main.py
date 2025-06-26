@@ -5,11 +5,23 @@ from models import Ticket
 from schemas import TicketCreate, TicketOut, TicketUpdate, StatsOut, TicketStatus
 from database import SessionLocal, engine, Base
 from sqlalchemy import func
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # Create tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+# ✅ Allow CORS for frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # your React frontend
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Dependency
 def get_db():

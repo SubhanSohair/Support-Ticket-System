@@ -1,32 +1,20 @@
-# Byte-compiled / cache
+# === PYTHON (FastAPI backend) ===
 __pycache__/
 *.py[cod]
-*$py.class
-
-# SQLite database
 *.db
-
-# Environment
+*.sqlite3
 .env
 venv/
 env/
 .venv/
 
-# VS Code / IDEs
-.vscode/
-.idea/
+# === NODE / VITE (React frontend) ===
+support-ticket-frontend/node_modules/
+support-ticket-frontend/dist/
+support-ticket-frontend/.env
 
-# OS / System
+# === OS / EDITOR ===
 .DS_Store
 Thumbs.db
-
-# Logs
+.vscode/
 *.log
-
-# Uvicorn reload artifacts
-*.pid
-
-# Python distribution/packaging
-build/
-dist/
-*.egg-info/
